@@ -14,6 +14,8 @@ namespace Client.Models {
         public string Nome { get; set; }
         public int Duracao { get; set; }
         public bool Activo { get; set; }
-        public Categoria CategoriaId { get; set; }
+        public int CategoriaId { get; set; }
+
+        public virtual Categoria Categoria { get; }
     }
 }

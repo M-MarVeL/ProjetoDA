@@ -44,7 +44,7 @@ namespace Client.Views {
         private void FuncPanel_Click(object sender, EventArgs e) {
             UserControlHide();
             funcionarios1.Visible = true;
-            
+            funcionarios1.CarregarDados();
         }
 
         private void cinemaPanel_Click(object sender, EventArgs e) {

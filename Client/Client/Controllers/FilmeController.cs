@@ -10,7 +10,7 @@ namespace Client.Controllers {
 
         static public List<Filme> getAllFilmes() {
             using (var db = new dbContext()) {
-                return db.Filmes.Include("CategoriaId").ToList();
+                return db.Filmes.ToList();
             }
         }
 
