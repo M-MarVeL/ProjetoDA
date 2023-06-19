@@ -37,9 +37,9 @@ namespace Client.Views {
             this.label6 = new System.Windows.Forms.Label();
             this.clientePanel = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.principal1 = new Client.Views.Principal();
             this.filmes1 = new Client.Views.Filmes();
             this.funcionarios1 = new Client.Views.Funcionarios();
+            this.principal1 = new Client.Views.Principal();
             this.cinema1 = new Client.Views.Cinema();
             this.clientes1 = new Client.Views.Clientes();
             this.sessoes1 = new Client.Views.Sessoes();
@@ -54,10 +54,10 @@ namespace Client.Views {
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Malgun Gothic", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(25, 9);
+            this.label1.Font = new System.Drawing.Font("Malgun Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(37, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 93);
+            this.label1.Size = new System.Drawing.Size(78, 75);
             this.label1.TabIndex = 1;
             this.label1.Text = "Gestão \r\n   de \r\nCinema\r\n";
             // 
@@ -65,7 +65,7 @@ namespace Client.Views {
             // 
             this.homePanel.BackColor = System.Drawing.SystemColors.GrayText;
             this.homePanel.Controls.Add(this.label2);
-            this.homePanel.Location = new System.Drawing.Point(7, 121);
+            this.homePanel.Location = new System.Drawing.Point(6, 99);
             this.homePanel.Name = "homePanel";
             this.homePanel.Size = new System.Drawing.Size(148, 51);
             this.homePanel.TabIndex = 2;
@@ -86,7 +86,7 @@ namespace Client.Views {
             // 
             this.filmesPanel.BackColor = System.Drawing.SystemColors.GrayText;
             this.filmesPanel.Controls.Add(this.label3);
-            this.filmesPanel.Location = new System.Drawing.Point(7, 187);
+            this.filmesPanel.Location = new System.Drawing.Point(6, 165);
             this.filmesPanel.Name = "filmesPanel";
             this.filmesPanel.Size = new System.Drawing.Size(148, 52);
             this.filmesPanel.TabIndex = 3;
@@ -107,7 +107,7 @@ namespace Client.Views {
             // 
             this.FuncPanel.BackColor = System.Drawing.SystemColors.GrayText;
             this.FuncPanel.Controls.Add(this.label4);
-            this.FuncPanel.Location = new System.Drawing.Point(7, 254);
+            this.FuncPanel.Location = new System.Drawing.Point(6, 232);
             this.FuncPanel.Name = "FuncPanel";
             this.FuncPanel.Size = new System.Drawing.Size(148, 52);
             this.FuncPanel.TabIndex = 5;
@@ -128,7 +128,7 @@ namespace Client.Views {
             // 
             this.cinemaPanel.BackColor = System.Drawing.SystemColors.GrayText;
             this.cinemaPanel.Controls.Add(this.label5);
-            this.cinemaPanel.Location = new System.Drawing.Point(7, 322);
+            this.cinemaPanel.Location = new System.Drawing.Point(6, 300);
             this.cinemaPanel.Name = "cinemaPanel";
             this.cinemaPanel.Size = new System.Drawing.Size(148, 52);
             this.cinemaPanel.TabIndex = 6;
@@ -149,7 +149,7 @@ namespace Client.Views {
             // 
             this.sessoesPanel.BackColor = System.Drawing.SystemColors.GrayText;
             this.sessoesPanel.Controls.Add(this.label6);
-            this.sessoesPanel.Location = new System.Drawing.Point(7, 456);
+            this.sessoesPanel.Location = new System.Drawing.Point(6, 434);
             this.sessoesPanel.Name = "sessoesPanel";
             this.sessoesPanel.Size = new System.Drawing.Size(148, 52);
             this.sessoesPanel.TabIndex = 7;
@@ -170,7 +170,7 @@ namespace Client.Views {
             // 
             this.clientePanel.BackColor = System.Drawing.SystemColors.GrayText;
             this.clientePanel.Controls.Add(this.label7);
-            this.clientePanel.Location = new System.Drawing.Point(7, 388);
+            this.clientePanel.Location = new System.Drawing.Point(6, 366);
             this.clientePanel.Name = "clientePanel";
             this.clientePanel.Size = new System.Drawing.Size(148, 52);
             this.clientePanel.TabIndex = 8;
@@ -187,53 +187,53 @@ namespace Client.Views {
             this.label7.Text = "Clientes";
             this.label7.Click += new System.EventHandler(this.clientePanel_Click);
             // 
-            // principal1
-            // 
-            this.principal1.Location = new System.Drawing.Point(160, 0);
-            this.principal1.Name = "principal1";
-            this.principal1.Size = new System.Drawing.Size(738, 516);
-            this.principal1.TabIndex = 9;
-            // 
             // filmes1
             // 
-            this.filmes1.Location = new System.Drawing.Point(162, 0);
+            this.filmes1.Location = new System.Drawing.Point(164, 0);
             this.filmes1.Name = "filmes1";
-            this.filmes1.Size = new System.Drawing.Size(738, 516);
+            this.filmes1.Size = new System.Drawing.Size(805, 531);
             this.filmes1.TabIndex = 0;
             // 
             // funcionarios1
             // 
-            this.funcionarios1.Location = new System.Drawing.Point(161, 0);
+            this.funcionarios1.Location = new System.Drawing.Point(164, 9);
             this.funcionarios1.Name = "funcionarios1";
-            this.funcionarios1.Size = new System.Drawing.Size(737, 516);
+            this.funcionarios1.Size = new System.Drawing.Size(805, 552);
             this.funcionarios1.TabIndex = 10;
+            // 
+            // principal1
+            // 
+            this.principal1.Location = new System.Drawing.Point(164, 9);
+            this.principal1.Name = "principal1";
+            this.principal1.Size = new System.Drawing.Size(805, 542);
+            this.principal1.TabIndex = 9;
             // 
             // cinema1
             // 
-            this.cinema1.Location = new System.Drawing.Point(162, 0);
+            this.cinema1.Location = new System.Drawing.Point(164, 9);
             this.cinema1.Name = "cinema1";
-            this.cinema1.Size = new System.Drawing.Size(736, 516);
+            this.cinema1.Size = new System.Drawing.Size(805, 552);
             this.cinema1.TabIndex = 11;
             // 
             // clientes1
             // 
-            this.clientes1.Location = new System.Drawing.Point(160, 0);
+            this.clientes1.Location = new System.Drawing.Point(163, 9);
             this.clientes1.Name = "clientes1";
-            this.clientes1.Size = new System.Drawing.Size(737, 516);
+            this.clientes1.Size = new System.Drawing.Size(806, 552);
             this.clientes1.TabIndex = 12;
             // 
             // sessoes1
             // 
-            this.sessoes1.Location = new System.Drawing.Point(161, 0);
+            this.sessoes1.Location = new System.Drawing.Point(163, 9);
             this.sessoes1.Name = "sessoes1";
-            this.sessoes1.Size = new System.Drawing.Size(736, 516);
+            this.sessoes1.Size = new System.Drawing.Size(806, 552);
             this.sessoes1.TabIndex = 13;
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(896, 520);
+            this.ClientSize = new System.Drawing.Size(973, 532);
             this.Controls.Add(this.clientePanel);
             this.Controls.Add(this.sessoesPanel);
             this.Controls.Add(this.cinemaPanel);
@@ -241,12 +241,12 @@ namespace Client.Views {
             this.Controls.Add(this.filmesPanel);
             this.Controls.Add(this.homePanel);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.sessoes1);
-            this.Controls.Add(this.clientes1);
-            this.Controls.Add(this.cinema1);
-            this.Controls.Add(this.principal1);
-            this.Controls.Add(this.funcionarios1);
             this.Controls.Add(this.filmes1);
+            this.Controls.Add(this.funcionarios1);
+            this.Controls.Add(this.principal1);
+            this.Controls.Add(this.cinema1);
+            this.Controls.Add(this.clientes1);
+            this.Controls.Add(this.sessoes1);
             this.MaximizeBox = false;
             this.Name = "FormMain";
             this.Text = "Cinema";

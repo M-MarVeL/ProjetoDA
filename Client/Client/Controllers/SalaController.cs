@@ -20,6 +20,12 @@ namespace Client.Controllers {
             }
         }
 
+        public static Sala getSalabyId(int id) {
+            using (var db = new dbContext()) {
+                return db.Salas.First(s => s.Id == id);
+            }
+        }
+
         public static string getNameSala(int id) {
             using (var db = new dbContext()) {
                 return db.Salas.First(s => s.Id == id).Nome;

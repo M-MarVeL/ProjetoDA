@@ -19,6 +19,12 @@ namespace Client.Controllers {
             }
         }
 
+        static public string getNomeCategoria(int id) {
+            using (var db = new dbContext()) {
+                return db.Categorias.First(c => c.Id == id).Nome;
+            }
+        }
+
         static public int getCategoriaId(string nomeCategoria) {
             using (var db = new dbContext()) {
                 var categoria = db.Categorias.FirstOrDefault(c => c.Nome == nomeCategoria);

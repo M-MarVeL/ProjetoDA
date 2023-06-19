@@ -116,12 +116,12 @@ namespace Client.Views {
             tbNomeFilme.Text = nome;
             tbDuracaoFilme.Text = duracao;
             cbFilme.Checked = activo;
-            cbCategorias.Text = categoria;
+            cbCategorias.Text = CategoriaController.getNomeCategoria(int.Parse(categoria));
         }
 
         private void btnAlterarFilme_Click(object sender, EventArgs e) {
             if (!(tbIdFilme.Text is null)) {
-                FilmeController.alterarFilme(int.Parse(tbIdFilme.Text), tbNomeFilme.Text, int.Parse(tbDuracaoFilme.Text), cbActivo.Checked, cbCategorias.Text);
+                FilmeController.alterarFilme(int.Parse(tbIdFilme.Text), tbNomeFilme.Text, int.Parse(tbDuracaoFilme.Text), cbFilme.Checked, cbCategorias.Text);
                 CarregarDados();
                 LimparFilmes();
             }

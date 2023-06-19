@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Client.Models {
-    public class dbContext : DbContext{
+    public class dbContext : DbContext {
         
         public DbSet<Bilhete> Bilhetes { get; set; }
         public DbSet<Categoria> Categorias { get; set; }

@@ -24,6 +24,12 @@ namespace Client.Views {
             sessoes1.Visible = false;
         }
 
+        public void loadSessao() {
+
+            sessoes1.Visible = false;
+         }
+
+
         private void LoadUserControlHide() {
             UserControlHide();
             principal1.Visible = true;

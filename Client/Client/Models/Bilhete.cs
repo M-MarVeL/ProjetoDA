@@ -13,7 +13,14 @@ namespace Client.Models {
         public int Id { get; set; }
         public int Lugar { get; set; }
         public bool Estado { get; set; }
-        public Funcionario FuncionarioId { get; set; }
-        public Cliente ClienteId { get; set; }
+
+        public int FuncionarioId { get; set; }
+        public int ClienteId { get; set; }
+        public int SessaoId { get; set;  }
+
+        public virtual Funcionario Funcionario { get; }
+        public virtual Cliente Cliente { get; }
+        public virtual Sessao Sessao { get; }
+
     }
 }

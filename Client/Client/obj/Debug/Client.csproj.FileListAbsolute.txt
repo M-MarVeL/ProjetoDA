@@ -1,7 +1,6 @@
 D:\Code\School\2_Semestre\DA\ProjetoDA\Client\Client\bin\Debug\Client.exe.config
 D:\Code\School\2_Semestre\DA\ProjetoDA\Client\Client\bin\Debug\Client.exe
 D:\Code\School\2_Semestre\DA\ProjetoDA\Client\Client\bin\Debug\Client.pdb
-D:\Code\School\2_Semestre\DA\ProjetoDA\Client\Client\obj\Debug\Client.FormLogin.resources
 D:\Code\School\2_Semestre\DA\ProjetoDA\Client\Client\obj\Debug\Client.Properties.Resources.resources
 D:\Code\School\2_Semestre\DA\ProjetoDA\Client\Client\obj\Debug\Client.csproj.GenerateResource.cache
 D:\Code\School\2_Semestre\DA\ProjetoDA\Client\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
@@ -20,3 +19,4 @@ D:\Code\School\2_Semestre\DA\ProjetoDA\Client\Client\obj\Debug\Client.Views.Prin
 D:\Code\School\2_Semestre\DA\ProjetoDA\Client\Client\obj\Debug\Client.Views.Cinema.resources
 D:\Code\School\2_Semestre\DA\ProjetoDA\Client\Client\obj\Debug\Client.Views.Clientes.resources
 D:\Code\School\2_Semestre\DA\ProjetoDA\Client\Client\obj\Debug\Client.Views.Sessoes.resources
+D:\Code\School\2_Semestre\DA\ProjetoDA\Client\Client\obj\Debug\Client.Views.Atendimento.resources

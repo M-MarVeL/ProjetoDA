@@ -90,6 +90,12 @@
     <Compile Include="Models\Pessoa.cs" />
     <Compile Include="Models\Sala.cs" />
     <Compile Include="Models\Sessao.cs" />
+    <Compile Include="Views\Atendimento.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Atendimento.Designer.cs">
+      <DependentUpon>Atendimento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Cinema.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -134,6 +140,9 @@
     <Compile Include="Views\Sessoes.Designer.cs">
       <DependentUpon>Sessoes.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\Atendimento.resx">
+      <DependentUpon>Atendimento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Cinema.resx">
       <DependentUpon>Cinema.cs</DependentUpon>
     </EmbeddedResource>
