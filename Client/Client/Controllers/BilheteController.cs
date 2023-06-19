@@ -14,5 +14,21 @@ namespace Client.Controllers {
             }
         }
 
+        public static void inserirBilhete(int lugar, bool activo, int idFuncionario, int idCliente, int idSessao) {
+            using (var db = new dbContext()) {
+                Bilhete bilhete = new Bilhete() {
+                    Lugar = lugar,
+                    Estado = activo,
+                    FuncionarioId = idFuncionario,
+                    ClienteId = idCliente,
+                    SessaoId = idSessao
+                };
+
+                db.Bilhetes.Add(bilhete);
+                db.SaveChanges();
+            
+            }
+        }
+
     }
 }

@@ -1,4 +1,5 @@
-﻿using Client.Views;
+﻿using Client.Controllers;
+using Client.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +15,12 @@ namespace Client {
         static void Main() {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormMain());
+
+            if(CinemaController.getCinema().Count() <= 0) {
+                Application.Run(new CinemaMain());
+            } else {
+                Application.Run(new FormMain());
+            }
         }
     }
 }

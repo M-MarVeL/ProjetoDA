@@ -25,11 +25,11 @@ namespace Client.Views {
         private void CarregarFuncionario() {
             var funcionario = FuncionarioController.getAllFuncionarios();
 
-            cbFuncionario.DisplayMember = "Nome";
-            cbFuncionario.Items.Add(funcionario);
+            foreach (var f in funcionario) {
+                cbFuncionario.Items.Add(f);
+            }
         }
 
-        
 
         public void sessaoData_CellClick(object sender, DataGridViewCellEventArgs e) {
             atendimento1.idSessao = int.Parse(sessaoData.CurrentRow.Cells[0].Value.ToString());
@@ -37,8 +37,15 @@ namespace Client.Views {
             atendimento1.Preco = float.Parse(sessaoData.CurrentRow.Cells[2].Value.ToString());
             atendimento1.SalaId = int.Parse(sessaoData.CurrentRow.Cells[3].Value.ToString());
             atendimento1.FilmeId = int.Parse(sessaoData.CurrentRow.Cells[4].Value.ToString());
+            atendimento1.nomeFuncionario = cbFuncionario.Text;
             atendimento1.Visible = true;
             atendimento1.CarregarDados();
         }
+
+        public void CarregarSessaoForm() {
+            atendimento1.Visible = false;
+            this.Visible = true;
+        }
+
     }
 }

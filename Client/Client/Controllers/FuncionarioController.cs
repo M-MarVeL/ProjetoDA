@@ -8,10 +8,27 @@ using System.Threading.Tasks;
 namespace Client.Controllers {
     class FuncionarioController {
 
-        public static List<Funcionario> getAllFuncionarios() {
+        public static List<Funcionario> getFuncionarios() {
             using (var db = new dbContext()) {
                 return db.Funcionarios.ToList();
             }
+        }
+
+        public static List<String> getAllFuncionarios() {
+            using (var db = new dbContext()) {
+                return db.Funcionarios.Select(e => e.Nome).ToList();
+            }
+        }
+
+        public static int getIdByNome(string nome) {
+            try {
+                using (var db = new dbContext()) {
+                    return db.Funcionarios.First(e => e.Nome == nome).Id;
+                }
+            } catch (Exception ex) {
+                return 1;
+            }
+  
         }
 
         public static void inserirFuncionarios(string nome, string morada, float salario, string funcao) {
@@ -28,7 +45,6 @@ namespace Client.Controllers {
                 db.SaveChanges();
             }
         }
-
 
         public static void alterarFuncionario(int id, string nome, string morada, float salario, string funcao) {
             using (var db = new dbContext()) {

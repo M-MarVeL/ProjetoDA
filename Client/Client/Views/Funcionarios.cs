@@ -17,7 +17,7 @@ namespace Client.Views {
 
         public void CarregarDados() {
             dataFuncionario.DataSource = null;
-            dataFuncionario.DataSource = FuncionarioController.getAllFuncionarios();
+            dataFuncionario.DataSource = FuncionarioController.getFuncionarios();
         }
 
         private void LimparDados() {

@@ -17,6 +17,7 @@ namespace Client.Views {
         public float Preco;
         public int SalaId;
         public int FilmeId;
+        public string nomeFuncionario;
 
         public Atendimento() {
             InitializeComponent();
@@ -75,18 +76,32 @@ namespace Client.Views {
         }
 
 
-        private void cbSessao_SelectedValueChanged(object sender, EventArgs e) {
-            // getDados();
-        }
 
         private void btnNovoBilhete_Click(object sender, EventArgs e) {
+            int idCliente = 0;
+            int idFuncionario = FuncionarioController.getIdByNome(nomeFuncionario);
+
+            if (cbAnonimo.Checked == true) {
+                idCliente = ClienteController.getAnonimoId();
+            } else {
+                if(!string.IsNullOrEmpty(tbNome.Text) || !string.IsNullOrEmpty(tbMorada.Text) || !string.IsNullOrEmpty(tbNIF.Text)) {
+                    ClienteController.inserirCliente(tbNome.Text, tbMorada.Text, int.Parse(tbNIF.Text));
+                    idCliente = ClienteController.getClienteId(tbNome.Text);
+                } else {
+                    idCliente = ClienteController.getAnonimoId();
+                }
+            }
+           
             foreach (Control control in tableLugares.Controls) {
                 if(control is Label label) {
                     if(label.BackColor == Color.Red) {
-                        
+                        BilheteController.inserirBilhete(int.Parse(label.Text), true, idFuncionario, idCliente, idSessao);
+                        label.BackColor = Color.Black;
                     }
                 }
             }
         }
+
+
     }
 }

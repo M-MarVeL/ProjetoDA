@@ -38,7 +38,7 @@ namespace Client.Views {
 
         private void homePanel_Click(object sender, EventArgs e) {
             LoadUserControlHide();
-            principal1.CarregarSessao();
+            principal1.CarregarSessaoForm();
         }
 
         private void filmesPanel_Click(object sender, EventArgs e) {

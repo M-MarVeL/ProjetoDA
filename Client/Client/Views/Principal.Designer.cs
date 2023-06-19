@@ -26,8 +26,8 @@ namespace Client.Views {
         private void InitializeComponent() {
             this.sessaoData = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.atendimento1 = new Client.Views.Atendimento();
             this.cbFuncionario = new System.Windows.Forms.ComboBox();
+            this.atendimento1 = new Client.Views.Atendimento();
             ((System.ComponentModel.ISupportInitialize)(this.sessaoData)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,14 +50,6 @@ namespace Client.Views {
             this.label1.TabIndex = 1;
             this.label1.Text = "Sessões";
             // 
-            // atendimento1
-            // 
-            this.atendimento1.Location = new System.Drawing.Point(0, 0);
-            this.atendimento1.Name = "atendimento1";
-            this.atendimento1.Size = new System.Drawing.Size(772, 495);
-            this.atendimento1.TabIndex = 2;
-            this.atendimento1.Visible = false;
-            // 
             // cbFuncionario
             // 
             this.cbFuncionario.FormattingEnabled = true;
@@ -66,12 +58,20 @@ namespace Client.Views {
             this.cbFuncionario.Size = new System.Drawing.Size(164, 21);
             this.cbFuncionario.TabIndex = 3;
             // 
+            // atendimento1
+            // 
+            this.atendimento1.Location = new System.Drawing.Point(0, 0);
+            this.atendimento1.Name = "atendimento1";
+            this.atendimento1.Size = new System.Drawing.Size(772, 495);
+            this.atendimento1.TabIndex = 2;
+            this.atendimento1.Visible = false;
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.cbFuncionario);
             this.Controls.Add(this.atendimento1);
+            this.Controls.Add(this.cbFuncionario);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.sessaoData);
             this.Name = "Principal";

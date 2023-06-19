@@ -20,3 +20,4 @@ D:\Code\School\2_Semestre\DA\ProjetoDA\Client\Client\obj\Debug\Client.Views.Cine
 D:\Code\School\2_Semestre\DA\ProjetoDA\Client\Client\obj\Debug\Client.Views.Clientes.resources
 D:\Code\School\2_Semestre\DA\ProjetoDA\Client\Client\obj\Debug\Client.Views.Sessoes.resources
 D:\Code\School\2_Semestre\DA\ProjetoDA\Client\Client\obj\Debug\Client.Views.Atendimento.resources
+D:\Code\School\2_Semestre\DA\ProjetoDA\Client\Client\obj\Debug\Client.Views.CinemaMain.resources

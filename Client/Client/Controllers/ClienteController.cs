@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Client.Controllers {
     class ClienteController {
@@ -11,6 +12,24 @@ namespace Client.Controllers {
         public static List<Cliente> getAllClientes() {
             using (var db = new dbContext()) {
                 return db.Clientes.ToList();
+            }
+        }
+
+        public static int getClienteId(string nome) {
+            using (var db = new dbContext()) {
+                return db.Clientes.First(c => c.Nome == nome).Id;
+            }
+        }
+
+        public static Cliente getAnonimo() {
+            using (var db = new dbContext()) {
+                return db.Clientes.First(c => c.Id == 1);
+            }
+        }
+
+        public static int getAnonimoId() {
+            using (var db = new dbContext()) {
+                return db.Clientes.First(c => c.Nome == "Anonimo").Id;
             }
         }
 
@@ -50,5 +69,7 @@ namespace Client.Controllers {
                 db.SaveChanges();
             }
         }
+
+
     }
 }
