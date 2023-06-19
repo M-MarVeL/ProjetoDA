@@ -14,13 +14,46 @@ namespace Client.Controllers {
             }
         }
 
-        static public void inserirDados(DateTime data, float preco) {
+        static public void inserirDados(DateTime data, string sala, string filme, float preco) {
             using (var db = new dbContext()) {
-                // List<Sessao> sessao = new List<Sessao>().Where(sessao =>);
+                Sessao sessao = new Sessao() {
+                    DataHora = data,
+                    salaId = SalaController.getCurrentSala(sala),
+                    filmeId = FilmeController.getCurrentFilme(filme),
+                    Preco = preco
+                };
 
-                // db.Sessoes.Add(); Adicionar os dados da sessão
+                db.Sessoes.Add(sessao);
 
-                // db.SaveChanges(); Para guardar na base de dados 
+                db.SaveChanges();
+            }
+        }
+
+        static public void alterarDados(int id, DateTime data, string sala, string filme, float preco) {
+            using (var db = new dbContext()) {
+                var sessao = db.Sessoes.First(s => s.Id == id);
+
+                if(sessao != null) {
+                    sessao.DataHora = data;
+                    sessao.salaId = SalaController.getCurrentSala(sala);
+                    sessao.filmeId = FilmeController.getCurrentFilme(filme);
+                    sessao.Preco = preco;
+                }
+
+                db.SaveChanges();
+
+            }
+        }
+
+        static public void eliminarDados(int id) {
+            using (var db = new dbContext()) {
+                var sessao = db.Sessoes.First(s => s.Id == id);
+
+                if(sessao != null) {
+                    db.Sessoes.Remove(sessao);
+
+                    db.SaveChanges();
+                }
             }
         }
 

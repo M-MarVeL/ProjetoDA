@@ -50,16 +50,19 @@ namespace Client.Views {
         private void cinemaPanel_Click(object sender, EventArgs e) {
             UserControlHide();
             cinema1.Visible = true;
+            cinema1.CarregarDados();
         }
 
         private void clientePanel_Click(object sender, EventArgs e) {
             UserControlHide();
             clientes1.Visible = true;
+            clientes1.CarregarDados();
         }
 
         private void sessoesPanel_Click(object sender, EventArgs e) {
             UserControlHide();
             sessoes1.Visible = true;
+            sessoes1.CarregarDados();
         }
     }
 }

@@ -210,21 +210,21 @@ namespace Client.Views {
             // 
             // cinema1
             // 
-            this.cinema1.Location = new System.Drawing.Point(0, 0);
+            this.cinema1.Location = new System.Drawing.Point(162, 0);
             this.cinema1.Name = "cinema1";
             this.cinema1.Size = new System.Drawing.Size(736, 516);
             this.cinema1.TabIndex = 11;
             // 
             // clientes1
             // 
-            this.clientes1.Location = new System.Drawing.Point(0, 0);
+            this.clientes1.Location = new System.Drawing.Point(160, 0);
             this.clientes1.Name = "clientes1";
             this.clientes1.Size = new System.Drawing.Size(737, 516);
             this.clientes1.TabIndex = 12;
             // 
             // sessoes1
             // 
-            this.sessoes1.Location = new System.Drawing.Point(0, 0);
+            this.sessoes1.Location = new System.Drawing.Point(161, 0);
             this.sessoes1.Name = "sessoes1";
             this.sessoes1.Size = new System.Drawing.Size(736, 516);
             this.sessoes1.TabIndex = 13;
@@ -241,12 +241,12 @@ namespace Client.Views {
             this.Controls.Add(this.filmesPanel);
             this.Controls.Add(this.homePanel);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.principal1);
-            this.Controls.Add(this.funcionarios1);
-            this.Controls.Add(this.filmes1);
             this.Controls.Add(this.sessoes1);
             this.Controls.Add(this.clientes1);
             this.Controls.Add(this.cinema1);
+            this.Controls.Add(this.principal1);
+            this.Controls.Add(this.funcionarios1);
+            this.Controls.Add(this.filmes1);
             this.MaximizeBox = false;
             this.Name = "FormMain";
             this.Text = "Cinema";

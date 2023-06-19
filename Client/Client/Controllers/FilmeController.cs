@@ -16,9 +16,19 @@ namespace Client.Controllers {
 
         static public List<Filme> getActiveFilmes() {
             using (var db = new dbContext()) {
-                var filmes = new List<Filme>().Where(f => f.Activo = true);
+               return db.Filmes.Where(f => f.Activo == true).ToList();
+            }
+        }
 
-                return filmes.ToList();
+        static public int getCurrentFilme(string nome) {
+            using (var db = new dbContext()) {
+                return db.Filmes.First(f => f.Nome == nome).Id;
+            }
+        }
+
+        static public string getNameFilme(int id) {
+            using (var db = new dbContext()) {
+                return db.Filmes.First(f => f.Id == id).Nome;
             }
         }
 

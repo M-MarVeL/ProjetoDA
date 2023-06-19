@@ -14,8 +14,11 @@ namespace Client.Models {
         public DateTime DataHora { get; set; }
         public float Preco { get; set; }
 
-        public Sala salaId { get; set; }
-        public Filme filmeId { get; set; }
+        public int salaId { get; set; }
+        public int filmeId { get; set; }
     
+        public virtual Sala Sala { get; }
+        public virtual Filme Filme { get; }
+
     }
 }

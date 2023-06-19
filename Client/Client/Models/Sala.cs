@@ -10,7 +10,7 @@ namespace Client.Models {
         
         [Key]
         public int Id { get; set; }
-        public int Nome { get; set; }
+        public string Nome { get; set; }
         public int Colunas { get; set; }
         public int Filas { get; set; }
     }
